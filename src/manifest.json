@@ -9,6 +9,13 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*.twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "permissions": [
     "activeTab",
     "https://twitter.com/"
